@@ -1212,6 +1212,10 @@ button:hover,
     .step-img {
         width: auto;
     }
+    .step::after {
+        background: url("./img/arrow-step.svg") 50% / contain no-repeat;
+       
+    }
 
     .partners-items {
         overflow-x: auto;
@@ -1495,6 +1499,12 @@ button:hover,
         color: #ed9711;
         font-weight: 100;
         padding: 2.5rem;
+    }
+    .offer-location::before {
+        background: url('./img/location.svg') 50% / contain no-repeat;
+        width: 0.9875rem;
+        height: 1.6625rem;
+       
     }
 
     .info-section {
