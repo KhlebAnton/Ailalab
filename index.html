@@ -10,21 +10,48 @@
 
 <body>
     <header class="header">
-        <nav class="nav-menu">
-            <div class="logo"></div>
+        <nav class="nav-menu menu-desktop">
+            <div class="logo">
+                <div class="logo-img"></div>
+                <div class="logo-title-container">
+                    <div class="logo-title">Ailalab.com</div>
+                    <div class="logo-desc">Партнерская CPA-сеть</div>
+                </div>
+            </div>
             <ul class="nav-menu-items">
-                <li class="nav-menu-item">Главная</li>
-                <li class="nav-menu-item">Офферы</li>
-                <li class="nav-menu-item">Новости</li>
-                <li class="nav-menu-item">Рекламадателю</li>
-                <li class="nav-menu-item">Вебмастеру</li>
-                <li class="nav-menu-item">Контакты</li>
+                <li class="nav-menu-item" onclick="scroolLink('hero')">Главная</li>
+                <li class="nav-menu-item" onclick="scroolLink('offers')">Офферы</li>
+                <li class="nav-menu-item" onclick="scroolLink('news')">Новости</li>
+                <li class="nav-menu-item" onclick="scroolLink('')">Рекламадателю</li>
+                <li class="nav-menu-item" onclick="scroolLink('')">Вебмастеру</li>
+                <li class="nav-menu-item" onclick="scroolLink('contacts-us')">Контакты</li>
             </ul>
         </nav>
+        <div class="nav-menu-mobile">
+            <div class="logo">
+                <div class="logo-img"></div>
+                <div class="logo-title-container">
+                    <div class="logo-title">Ailalab.com</div>
+                    <div class="logo-desc">Партнерская CPA-сеть</div>
+                </div>
+            </div>
+            <div class="menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list">
+                    <li class="menu-item" onclick="scroolLink('hero')">Главная</li>
+                    <li class="menu-item" onclick="scroolLink('offers')">Офферы</li>
+                    <li class="menu-item" onclick="scroolLink('news')">Новости</li>
+                    <li class="menu-item" onclick="scroolLink('')">Рекламадателю</li>
+                    <li class="menu-item" onclick="scroolLink('')">Вебмастеру</li>
+                    <li class="menu-item" onclick="scroolLink('contacts-us')">Контакты</li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main class="main">
         <div class="bg-black">
-            <section class="hero">
+            <section id="hero" class="hero">
                 <h1>
                     Добро пожаловать в Aila Lab –<br>
                     на Ваш путь в мир<br>
@@ -52,8 +79,8 @@
                 </div>
 
                 <div class="group-buttons">
-                    <div class="button-action sign-in" ontouchstart>Регистрация</div>
-                    <div class="button-action sign-up" ontouchstart>Вход в систему</div>
+                    <div class="button-action sign-in" ontouchstart onclick="openPopUpSignUp()">Регистрация</div>
+                    <div class="button-action sign-up" ontouchstart onclick="openPopUpSignIn()">Вход в систему</div>
                 </div>
             </section>
             <section class="solutions">
@@ -299,7 +326,7 @@
             </section>
         </div>
         <div class="bg-orange">
-            <section class="offers">
+            <section id="offers" class="offers">
                 <h2 class="section-title">Горячие офферы</h2>
                 <div class="section-title-bottom">
                     <div class="title-item"></div>
@@ -388,7 +415,7 @@
                 </div>
             </section>
         </div>
-        
+
         <div class="bg-white middle">
             <div class="bg-cirlce"></div>
             <section class="info-section">
@@ -415,7 +442,7 @@
             </section>
         </div>
         <div class="bg-black middle">
-            <section class="contacts-us">
+            <section id="contacts-us" class="contacts-us">
                 <h2 class="section-title">Как с нами связаться?</h2>
                 <div class="section-title-bottom">
                     <div class="title-item"></div>
@@ -493,7 +520,7 @@
                 </div>
 
             </section>
-            <section class="news">
+            <section id="news" class="news">
                 <h2 class="section-title">Новости</h2>
                 <div class="section-title-bottom">
                     <div class="title-item"></div>
@@ -632,39 +659,128 @@
         </div>
     </main>
     <footer class="footer">
-        <nav class="nav-menu ">
-            <div class="logo"></div>
+        <nav class="nav-menu">
+            <div class="logo">
+                <div class="logo-img"></div>
+                <div class="logo-title-container">
+                    <div class="logo-title">Ailalab.com</div>
+                    <div class="logo-desc">Партнерская CPA-сеть</div>
+                </div>
+            </div>
             <ul class="nav-menu-items">
                 <div class="wrapper-item">
-                    <li class="nav-menu-item">Главная</li>
-                    <li class="nav-menu-item">Офферы</li>
+                    <li class="nav-menu-item" onclick="scroolLink('hero')">Главная</li>
+                    <li class="nav-menu-item" onclick="scroolLink('offers')">Офферы</li>
                 </div>
                 <div class="wrapper-item">
-                    <li class="nav-menu-item">Новости</li>
-                    <li class="nav-menu-item">Рекламадателю</li>
+                    <li class="nav-menu-item" onclick="scroolLink('news')">Новости</li>
+                    <li class="nav-menu-item" onclick="scroolLink('')">Рекламадателю</li>
                 </div>
                 <div class="wrapper-item">
-                    <li class="nav-menu-item">Вебмастеру</li>
-                    <li class="nav-menu-item">Контакты</li>
+                    <li class="nav-menu-item" onclick="scroolLink('')">Вебмастеру</li>
+                    <li class="nav-menu-item" onclick="scroolLink('contacts-us')">Контакты</li>
                 </div>
             </ul>
         </nav>
         <div class="copyright-container">
             <div class="copyright">
-                © 2024   &nbsp;|&nbsp;   Aila Lab
+                © 2024 &nbsp;|&nbsp; Aila Lab
             </div>
             <div class="link-rules-items">
-                <span class="link-rules-item">
-                    Политика конфиденциальности 
+                <span class="link-rules-item" onclick="openPopUpPolicy()">
+                    Политика конфиденциальности
                 </span>
-                &nbsp;| &nbsp; 
+                &nbsp;| &nbsp;
                 <span class="link-rules-item">
                     Правила использования
                 </span>
             </div>
         </div>
     </footer>
+    <div class="form-popup form-sign-in hidden">
+        <div class="form-container">
+            <div class="form-title">Вход в систему</div>
+            <form class="form" action="">
+                <input type="email-in" name="email-in" id="email-in" placeholder="E-mail" required>
+                <input type="password-in" name="password-in" id="password-in" placeholder="Пароль" required>
+                <button type="submit">Вход</button>
+            </form>
+        </div>
 
+    </div>
+    <div class="form-popup form-sign-up hidden">
+        <div class="form-container">
+            <div class="form-title">Вход в систему</div>
+            <form class="form" action="">
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <input type="password" name="password" id="password" placeholder="Пароль" required>
+                <input type="password" name="password-2" id="password-2" placeholder="Пароль повторно" required>
+                <div class="radio-container">
+                    <input type="radio" name="who" id="webmaster">
+                    <label for="webmaster">
+                        Я вебмастер
+                    </label>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" name="who" id="advertiser">
+                    <label for="advertiser">
+                        Я рекламодатель
+                    </label>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" name="policy" id="policy" required>
+                    <label for="policy">
+                        Согласен с <a href="#" onclick="openPopUpPolicy()">политикой конфиденциальности</a> и <a href="#"
+                            target="_blank">правилами</a> использования.
+                    </label>
+                </div>
+
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="form-popup policy hidden">
+        <div class="policy-container">
+            <div class="close-btn" onclick="closePopUpPolicy()"></div>
+            <div class="policy-title">Политика конфиденциальности</div>
+            <div class="policy-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facilis excepturi quasi porro dignissimos dolor, voluptatem facere animi illum, ex quisquam laudantium error, voluptate tempora alias corrupti voluptates placeat aliquid!
+                Omnis non deleniti possimus a libero quibusdam obcaecati magni consectetur! Fuga quod iure voluptas inventore illum dolorem vel perspiciatis, cumque sed possimus commodi officia fugit amet architecto tempora deleniti velit!
+                Cum, doloremque placeat? Maiores eos quidem, expedita nisi saepe delectus cum numquam sint, ipsa quas officia excepturi itaque dolore rem commodi autem in dolorem, ad velit voluptates quae repellendus molestias!
+                Atque, laudantium deserunt. Impedit fugit, adipisci debitis nisi voluptatem non ducimus veniam ipsa quisquam corrupti magni dolore, et libero dolores temporibus blanditiis perferendis suscipit unde nulla aspernatur repellendus ullam illum.
+                Ad repellat exercitationem voluptatum! Magni error, libero suscipit officiis commodi accusantium modi reprehenderit consequatur placeat numquam ullam quae repellendus impedit cupiditate labore at, optio ipsa quibusdam. Ut doloribus quos totam.
+                Libero accusantium iste ut. Dolores dolorum totam eos porro adipisci sed voluptas consectetur non, eligendi voluptate voluptatem earum fugit explicabo laborum eum? Nulla tempore consectetur fugiat illo eveniet, voluptatibus temporibus.
+                Pariatur illum quisquam, minus rerum ab deleniti delectus saepe architecto atque dicta excepturi quo praesentium, nihil omnis ad ratione ipsum provident facilis nam ea illo. Minima veritatis excepturi placeat tempora.
+                Rerum ullam similique, consequatur autem amet quod repellat dignissimos non iusto! Hic voluptatum rerum, facilis pariatur qui illum quos distinctio similique nobis eos ad itaque in? Ea asperiores laborum enim!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta commodi in repellendus dolorem ea inventore beatae eligendi, perferendis id aspernatur incidunt earum! Veniam modi consectetur beatae perspiciatis officia quibusdam iste!
+                Voluptatem incidunt, excepturi ipsa iure ducimus est minus iste quidem explicabo molestiae! Repellendus laudantium excepturi corrupti eligendi culpa ullam quam cum distinctio vel, optio quos adipisci voluptas itaque suscipit explicabo!
+                Ducimus, in ipsam veritatis magni excepturi dolorum minima culpa odit quidem voluptate fuga. Fugit, vitae ipsa deleniti temporibus fugiat ab earum pariatur ipsam quos laborum assumenda. Eos soluta totam accusantium.
+                Rerum molestias, cupiditate tempora ut laudantium modi, illum non enim, aut magnam nulla nihil ipsum dicta deleniti minus perspiciatis tempore earum nam? Impedit maiores porro qui illum omnis, nulla necessitatibus!
+                In voluptatibus ea libero eligendi repellendus alias porro possimus magnam ex laborum nisi temporibus voluptatum odit nostrum, enim natus ducimus perferendis necessitatibus eius eos non dolorem. Consequatur magni magnam inventore?
+                Ratione quibusdam facere ex praesentium placeat alias, quia aliquid repellat rem. Sed, perspiciatis. Ipsam animi nisi tempora ducimus? Quos doloribus consequuntur quae enim quis ducimus voluptas id nisi omnis dicta?
+                Quaerat porro exercitationem consequatur ducimus. Vel velit, veniam, quam eveniet id minus voluptates laudantium sit exercitationem cumque nostrum doloribus architecto odit quibusdam illum quos obcaecati cum. Similique, voluptatem quis! Dolores.
+                Delectus dolore commodi saepe nihil quis ex rem minima voluptates, ad obcaecati pariatur porro, totam cupiditate quo, quas exercitationem! Voluptate quod magni dolorem maiores molestias reprehenderit delectus doloremque ab illo.
+                Nobis ratione, rerum in consequuntur incidunt recusandae magnam dignissimos ex veniam optio inventore laborum autem ipsum? Iusto, excepturi quaerat, atque illo assumenda ad animi a accusamus eaque dolores magni aspernatur.
+                In eos, aperiam odit sint praesentium, omnis aut fugiat quia odio sapiente perferendis optio consequatur ipsa non dignissimos vitae quae! Eum nulla repudiandae veritatis veniam molestias laborum? Quae, assumenda consectetur.
+                Quisquam distinctio qui error maiores, reprehenderit eligendi consectetur recusandae, fugiat natus possimus, maxime ex hic ducimus deleniti repellat repellendus a soluta officia laudantium quibusdam inventore quia ut numquam. Officia, nihil!
+                Commodi magnam praesentium accusantium nemo aspernatur accusamus, hic fugit similique omnis rerum minus consequuntur sint facilis mollitia sit repellat ex! Nihil veniam facere sit voluptate, tempora voluptas necessitatibus harum reprehenderit?
+                Non laboriosam nemo sed necessitatibus ut dolores quia architecto sequi nulla deleniti? Unde aliquid possimus incidunt consectetur odit iusto consequatur nisi suscipit ducimus nobis, libero officia totam repudiandae repellat ratione.
+                Laudantium voluptate quas rem iusto excepturi dignissimos quia quod. Necessitatibus, odio adipisci aperiam pariatur incidunt repellendus. Totam dolore a ut voluptatum voluptas iure delectus officiis, fugit deserunt sequi laboriosam sit.
+                Eos quidem delectus magni recusandae perferendis quod, nam ad error dicta fugiat nihil quis incidunt, expedita sit! Dolore quis, quae dolor repellendus magni officia quos commodi officiis sunt, repellat nisi.
+                Unde repellendus ullam nobis, quo ex laborum rem error molestias. Iusto, fugit a numquam omnis vero magni minus eaque, tempora itaque voluptatibus dolores quam expedita ad! Saepe eos dolorum minima.
+                Aut odit laudantium quis maiores blanditiis deleniti nam magni, eius consequuntur repellat fugiat commodi aliquam quo ex consequatur magnam aliquid non? Minima, voluptate optio ipsa corporis amet nobis commodi laborum.
+                Nesciunt distinctio fuga repellendus officia consequuntur! Dolorum culpa et iste a ea ipsa totam aperiam tenetur quisquam quam illum autem omnis doloribus eum ut, tempore optio. Quasi tenetur veniam odio.
+                Temporibus placeat quia molestiae expedita a repellat, libero possimus! Perspiciatis, at odit. Officia molestiae aspernatur dolorem soluta fugit molestias odit debitis amet at. Recusandae esse eius sint eum, omnis voluptatibus.
+                Possimus ab excepturi, laborum deserunt earum libero. Odio recusandae porro fugit a libero incidunt minima commodi. Reiciendis, facere earum voluptatum expedita necessitatibus in, corrupti optio asperiores aperiam blanditiis repudiandae pariatur.
+                Error, odio quo eum enim dolores iusto adipisci perspiciatis voluptatum optio animi voluptas! Eveniet, autem necessitatibus. Distinctio impedit minima velit accusantium officiis veritatis nam, corporis provident exercitationem dicta expedita sit!
+                Sed explicabo vitae laboriosam tenetur, qui debitis numquam dignissimos voluptates dolor tempora nemo hic obcaecati? Provident, corporis nihil soluta ad blanditiis consequatur ipsa eius consequuntur, neque esse rerum repellendus sequi.
+                Qui similique fuga tempora nam minima odio pariatur vitae nesciunt et esse voluptatibus quod fugiat itaque corporis consequuntur, ducimus ea assumenda quasi quis atque, deleniti ad! Et illo similique pariatur?
+            </div>
+        </div>
+    </div>
 
     <script src="./script.js"></script>
 </body>
