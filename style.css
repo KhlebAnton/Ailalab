@@ -1213,7 +1213,7 @@ button:hover,
         width: auto;
     }
     .step::after {
-        background: url("./img/arrow-step.svg") 50% / contain no-repeat;
+        background: url("./img/arrow-step.svg") 50% / 100% 100% no-repeat;
        
     }
 
@@ -1501,7 +1501,7 @@ button:hover,
         padding: 2.5rem;
     }
     .offer-location::before {
-        background: url('./img/location.svg') 50% / contain no-repeat;
+        background: url('./img/location.svg') 50% / 100% 100% no-repeat;
         width: 0.9875rem;
         height: 1.6625rem;
        
