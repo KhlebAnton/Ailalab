@@ -175,7 +175,7 @@ img {
 }
 
 .logo {
-    width: 17.125rem;
+    
     height: 3.56rem;
     font-family: 'Gotham Pro', sans-serif;
     text-transform: uppercase;
@@ -201,6 +201,7 @@ img {
 .logo-desc {
     font-size: 0.6875rem;
     letter-spacing: 0.17rem;
+    text-wrap: nowrap;
 }
 
 .nav-menu {
@@ -1427,6 +1428,16 @@ button:hover,
         flex-direction: column;
         gap: 2.5rem;
     }
+    .line {
+       
+        height: 0.1rem;
+       
+    }
+    .policy-text {
+        max-height: 60.75rem;
+        line-height: normal;
+        font-size: 1.5rem;
+    }
 
     .step-img {
         width: 50%;
@@ -1443,8 +1454,12 @@ button:hover,
         width: 2.56rem;
         height: 2.375rem;
     }
+    .steps {
+        
+        gap: 2.5rem;
+    }
 
-    .step:last-child {
+    .step:nth-child(2n) {
         flex-direction: column;
     }
 
@@ -1636,5 +1651,60 @@ button:hover,
     }
     .policy-container {
         padding: 2.125rem;
+    }
+    .form {
+        padding: 4rem 2.18rem;
+        
+    }
+    .form input {
+        width: 100%;
+        height: 5.5625rem;
+        border-radius: 0.625rem;
+        padding: 0 1.6875rem;
+        border: 0.01rem solid #c0c0c0;
+        font-weight: 100;
+        font-size: 2.4rem;
+        line-height: 0.1rem;
+    }
+    .form input::placeholder {
+        font-weight: 100;
+        font-size: 2.4rem;
+        line-height: 0.1rem;
+    }
+    .radio-container {
+        display: flex;
+        font-size: 2.5rem;
+        font-weight: 100;
+        color: #303030;
+        align-items: center;
+        width: 100%;
+        gap: 1.31rem;
+    }
+    .check-container label {
+        color: #000000;
+        font-size: 2rem;
+        font-weight: normal;
+        line-height: 1.465rem;
+    }
+    .check-container label a {
+        color: #000000;
+        font-size: 2rem;
+        font-weight: normal;
+        line-height: 1.465rem;
+    }
+    button, .button-action {
+       
+        font-size: 2rem;
+       
+    }
+    .copyright-container {
+        margin-top: 4.125rem;
+        border-top: 0.1rem solid #7f7f7f;
+        display: flex;
+        justify-content: space-between;
+        padding: 2.5rem 0;
+        font-size: 1.475rem;
+        flex-direction: column-reverse;
+        gap: 2rem;
     }
 }
