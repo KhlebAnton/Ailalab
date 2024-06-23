@@ -1213,7 +1213,7 @@ button:hover,
         width: auto;
     }
     .step::after {
-        background: url("./img/arrow-step.svg") 50% / 100% 100% no-repeat;
+        display: none;
        
     }
 
@@ -1265,7 +1265,13 @@ button:hover,
     .bg-cirlce {
         top: -3rem;
         bottom: 3rem;
-        background: url(./img/bg-circle.png) 50% / cover;
+        background: url("./img/bg-circle.png") 50% / cover;
+    }
+    .offer-location::before {
+        background: url('./img/location.svg') 50% 50% / contain no-repeat;
+        width: 1.9875rem;
+        height: 1.6625rem;
+       
     }
 
     .info-img {
@@ -1500,12 +1506,7 @@ button:hover,
         font-weight: 100;
         padding: 2.5rem;
     }
-    .offer-location::before {
-        background: url('./img/location.svg') 50% / 100% 100% no-repeat;
-        width: 0.9875rem;
-        height: 1.6625rem;
-       
-    }
+   
 
     .info-section {
         flex-direction: column;
