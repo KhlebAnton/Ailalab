@@ -1351,8 +1351,8 @@ button:hover,
 
 .form-popup input[type="radio"]:checked+label:after,
 .form-popup input[type="radio"]:not(:checked)+label:after {
-    left: 0.6rem;
-    top: 0.65rem;
+    left: 0.63rem;
+    top: 0.63rem;
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 100%;
