@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AILALAB.COM</title>
-    <link rel="stylesheet" href="./style.css?v=8">
+    <link rel="stylesheet" href="./style.css?v=9">
 </head>
 
 <body>
@@ -51,6 +51,11 @@
     </header>
     <main class="main">
         <div class="bg-black">
+            <div class="element-bg elem-cirlce cirlce-one"></div>
+            <div class="element-bg elem-cirlce cirlce-two"></div>
+            <div class="element-bg elem-cirlce cirlce-three"></div>
+            <div class="element-bg elem-plus plus-one"></div>
+            <div class="element-bg elem-plus plus-two"></div>
             <section id="hero" class="hero">
                 <h1>
                     Добро пожаловать в Aila Lab –<br>
@@ -200,6 +205,10 @@
             </section>
         </div>
         <div class="bg-white">
+            <div class="element-bg big-circle big-circle-left"></div>
+            <div class="element-bg big-circle big-circle-right"></div>
+            <div class="element-bg elem-plus-orange plus-orange-one"></div>
+            <div class="element-bg elem-plus-orange plus-orange-two"></div>
             <section class="steps">
                 <div class="step">
                     <div class="step-desc">
@@ -414,10 +423,13 @@
                     </div>
                 </div>
             </section>
+            
         </div>
 
-        <div class="bg-white middle">
-            <div class="bg-cirlce"></div>
+        <div class="bg-white bg-white-two">
+            <div class="element-bg big-circle big-circle-left"></div>
+            <div class="element-bg big-circle big-circle-right"></div>
+            <div class="element-bg elem-plus-orange plus-orange-one"></div>
             <section class="info-section">
                 <div class="info-img">
                     <img src="./img/info-img.png" alt="Допполнительная информация">
@@ -667,7 +679,7 @@
                     <div class="logo-desc">Партнерская CPA-сеть</div>
                 </div>
             </div>
-            <ul class="nav-menu-items">
+            <ul class="nav-menu-items footer-menu-items-deskop">
                 <div class="wrapper-item">
                     <li class="nav-menu-item" onclick="scroolLink('hero')">Главная</li>
                     <li class="nav-menu-item" onclick="scroolLink('offers')">Офферы</li>
@@ -677,6 +689,18 @@
                     <li class="nav-menu-item" onclick="scroolLink('')">Рекламодателю</li>
                 </div>
                 <div class="wrapper-item">
+                    <li class="nav-menu-item" onclick="scroolLink('')">Вебмастеру</li>
+                    <li class="nav-menu-item" onclick="scroolLink('contacts-us')">Контакты</li>
+                </div>
+            </ul>
+            <ul class="nav-menu-items footer-menu-items-mobile">
+                <div class="wrapper-item">
+                    <li class="nav-menu-item" onclick="scroolLink('hero')">Главная</li>
+                    <li class="nav-menu-item" onclick="scroolLink('offers')">Офферы</li>
+                    <li class="nav-menu-item" onclick="scroolLink('news')">Новости</li>
+                </div>
+                <div class="wrapper-item">
+                    <li class="nav-menu-item" onclick="scroolLink('')">Рекламодателю</li>
                     <li class="nav-menu-item" onclick="scroolLink('')">Вебмастеру</li>
                     <li class="nav-menu-item" onclick="scroolLink('contacts-us')">Контакты</li>
                 </div>
@@ -710,24 +734,24 @@
     </div>
     <div class="form-popup form-sign-up hidden">
         <div class="form-container">
-            <div class="form-title">Вход в систему</div>
+            <div class="form-title">Регистрация</div>
             <form class="form" action="">
                 <input type="email" name="email" id="email" placeholder="E-mail" required>
                 <input type="password" name="password" id="password" placeholder="Пароль" required>
                 <input type="password" name="password-2" id="password-2" placeholder="Пароль повторно" required>
-                <div class="radio-container">
+                <div class="radio-container webmaster">
                     <input type="radio" name="who" id="webmaster">
                     <label for="webmaster">
                         Я вебмастер
                     </label>
                 </div>
-                <div class="radio-container">
+                <div class="radio-container advertiser">
                     <input type="radio" name="who" id="advertiser">
                     <label for="advertiser">
                         Я рекламодатель
                     </label>
                 </div>
-                <div class="check-container">
+                <div class="check-container check-policy">
                     <input type="checkbox" name="policy" id="policy" required>
                     <label for="policy">
                         Согласен с <a href="#" onclick="openPopUpPolicy()">политикой конфиденциальности</a> и <a href="#"
