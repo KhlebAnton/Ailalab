@@ -47,6 +47,9 @@ html {
     font-weight: 100;
     overflow-x: hidden;
 }
+body {
+ overflow: hidden;
+}
 body.open-modal {
     overflow: hidden;
     width: 100%;
@@ -248,6 +251,7 @@ img {
 .bg-white.bg-white-two {
     background: url('./img/bg-white-2.png') 50% 0 / 100% 100%;
     z-index: 3;
+    
 }
 
 .bg-white.bg-white-two::after {
