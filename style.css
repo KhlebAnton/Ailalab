@@ -1163,6 +1163,8 @@ button:hover,
 }
 
 .form-container {
+    max-height: 90%;
+    
     width: 38.125rem;
     background: #f7f7f7;
 
@@ -1584,7 +1586,7 @@ button:hover,
     }
 }
 
-@media (max-width: 999px) and (max-height: 797px) and (orientation:landscape) {
+@media (max-width: 1120px) and (max-height: 797px) and (orientation:landscape) {
     .policy-container {
         max-width: 90%;
         max-height: 80%;
