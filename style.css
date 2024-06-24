@@ -528,8 +528,7 @@ button:hover,
 }
 
 .partner-item-img {
-    width: 7.81rem;
-    height: 7.81rem;
+   
 }
 
 .partner-item-img img {
@@ -586,7 +585,7 @@ button:hover,
     flex-direction: column;
     gap: 1.25rem;
     padding: 2.25rem 2.25rem 2.25rem 12.25rem;
-    height: 9.8125rem;
+    min-height: 9.8125rem;
     border-radius: 1.25rem 1.25rem 0 0;
     background: #313131;
 
@@ -1413,6 +1412,7 @@ footer {
         margin-left: 40px;
         margin-top: 40px;
         height: auto;
+        
     }
     
 
