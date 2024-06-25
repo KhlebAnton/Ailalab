@@ -333,7 +333,7 @@ img {
 }
 
 .logo-img {
-    width: 3.5625rem;
+    width: 3.9625rem;
     height: 3.5625rem;
     background: url('./img/logo.png') 50% / cover;
     margin-right: 9px;
@@ -537,6 +537,9 @@ button:hover,
     justify-content: center;
     gap: 190px;
 }
+.solutions-item {
+    max-width: 293px;
+}
 
 .steps {
     color: #000000;
@@ -582,7 +585,11 @@ button:hover,
     font-size: 1.875rem;
     line-height: 2.81rem;
     color: #343434;
+    max-width: 640px;
 
+}
+.step-title br {
+    display: none;
 }
 
 .step-items {
@@ -591,6 +598,7 @@ button:hover,
     display: flex;
     flex-direction: column;
     gap: 24px;
+    max-width: 546px;
 }
 
 .step-item {
@@ -640,6 +648,7 @@ button:hover,
     line-height: 1.75rem;
     font-weight: normal;
     margin-bottom: 7.5rem;
+    max-width: 597px;
 }
 
 .partners-items {
@@ -672,6 +681,7 @@ button:hover,
     color: #b1b1b1;
     font-size: 1.125rem;
     line-height: 1.5rem;
+    max-width: 214px;
 }
 
 .offers {
@@ -985,6 +995,7 @@ button:hover,
 
 .ref-desc {
     font-size: 1.125rem;
+    max-width: 421px;
 }
 
 .action-link {
@@ -1393,6 +1404,9 @@ button:hover,
 }
 
 @media (max-width: 1312px) {
+    .elem-plus-orange {
+        display: none;
+    }
     .header .menu-desktop {
         display: none;
     }
@@ -1417,6 +1431,9 @@ button:hover,
         align-items: center;
         text-align: center;
     }
+    .bg-white-two .big-circle.big-circle-left {
+        top: 200px;
+    }
 
     .bg-orange {
         position: relative;
@@ -1440,6 +1457,12 @@ button:hover,
         z-index: -2;
         background: url("./img/bg-white-2.png") 100% 0 / cover;
     }
+    br {
+        display: none;
+    }
+    .partners-desc br {
+display: block;
+    }
 
 }
 
@@ -1447,7 +1470,7 @@ button:hover,
     html {
         font-size: 14px;
     }
-
+    
     .bg-black .element-bg {
         display: none;
     }
@@ -1797,7 +1820,7 @@ button:hover,
     }
 
     .nav-menu-mobile .logo-img {
-        width: 2.5625rem;
+        width: 2.9625rem;
         height: 2.5625rem;
     }
 
